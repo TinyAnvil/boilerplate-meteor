@@ -1,0 +1,52 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, height=device-height, width=device-width">
+
+  <meta property="og:title" content="Tiny Treasure Jewelry">
+  <meta property="og:site_name" content="Tiny Treasure Jewelry">
+  <meta name="twitter:title" content="Tiny Treasure Jewelry">
+
+  <meta property="og:image" content="https://tinytreasure.jewelry/meta.png?v=1">
+  <meta name="twitter:image:src" content="https://tinytreasure.jewelry/meta.png?v=1">
+
+  <meta property="og:url" content="https://tinytreasure.jewelry/">
+
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@debrantings">
+  <meta name="twitter:creator" content="@debrantings">
+
+  <meta name="description" content="Tiny Treasure Jewelry">
+  <meta property="og:description" content="Tiny Treasure Jewelry">
+  <meta name="twitter:description" content="Tiny Treasure Jewelry">
+
+  <link rel="shortcut icon" type="image/png" href="https://tinytreasure.jewelry/icon.png?v=1">
+  <link rel="mask-icon" href="https://tinytreasure.jewelry/icon.svg?v=1">
+  <link rel="icon" type="image/x-icon" href="https://tinytreasure.jewelry/icon.png?v=1">
+  <link rel="apple-touch-icon-precomposed" href="https://tinytreasure.jewelry/icon.png?v=1">
+  <link rel="apple-touch-icon" href="https://tinytreasure.jewelry/icon.png?v=1">
+
+  <!-- <meta name="google-site-verification" content="site-key-from-google"> -->
+
+  <!-- <script src="https://checkout.stripe.com/checkout.js"></script> -->
+</head>
+
+<template name="app">
+  {{> yield}}
+</template>
+
+<template name="alertBox">
+  <div class="alert-box {{Alert.level}}" style="display: none;">
+    <p>{{Alert.message}}</p>
+  </div>
+</template>
+
+<template name="404">
+  <div class="four-oh-four">
+    <h1><a href="/">404</a></h1>
+  </div>
+</template>
+
+<template name="loading">
+  {{> spinner}}
+</template>

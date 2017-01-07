@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500');
+
+@import
+  "vendor/vendor",
+  "vamp/vamp";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  text-size-adjust: 100%;
+}
+body {
+  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $black;
+  font-size: 16px;
+  background-color: white;
+  font-weight: 400;
+}
+img {
+  display: block;
+}
+input[type="text"], button {
+  outline: none;
+  appearance: none;
+  font-size: 1rem;
+  border: none;
+  font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  background: none;
+  color: $black;
+}
+button {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+::-webkit-input-placeholder {
+  color: $gray;
+}
+::-moz-placeholder {
+  color: $gray;
+}
+:-ms-input-placeholder {
+  color: $gray;
+}
+:-moz-placeholder {
+  color: $gray;
+}
+strong {
+  font-weight: 500;
+}
+
+.loading {
+  background: url('/loading-spokes.svg') no-repeat center;
+  background-size: contain;
+  display: inline-block;
+  min-width: 10px;
+  min-height: 10px;
+
+  &.white {
+    background: url('/loading-spokes-white.svg') no-repeat center;
+    background-size: contain;
+  }
+}
+
+.alert-box {
+  background-color: $black;
+  color: $white;
+  padding: 1rem;
+  transition: background-color 250ms;
+  text-align: center;
+
+  &.red {
+    background-color: $red;
+  }
+  &.green {
+    background-color: $green;
+  }
+}
+
+.four-oh-four {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  h1 {
+    font-size: 10rem;
+    text-decoration: underline;
+
+    a {
+      color: $black;
+    }
+  }
+}
